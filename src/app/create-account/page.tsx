@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-
   return (
     <main className="text-dark-gray max-sm:m-10 leading-[150%] sm:max-w-[476px] mx-auto sm:flex sm:flex-col sm:justify-center sm:items-center h-[100dvh]">
       <header className="flex flex-row max-w-[311px] mx-auto gap-x-2 sm:justify-center">
@@ -51,15 +50,15 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-y-1">
-            <label className="text-xs" htmlFor="password">
-              Password
+            <label className="text-xs" htmlFor="create password">
+              Create password
             </label>
             <div className="relative">
               <input
                 className="border placeholder-dark-gray placeholder-opacity-50 pr-3 pl-7 rounded-lg h-[48px] w-[311px] sm:w-[396px] focus:outline-primary focus:shadow-primary/40 focus:shadow-lg border-borders"
                 type="text"
-                id="password"
-                placeholder="Enter your password"
+                id="create password"
+                placeholder="At least 8 characters"
               />
               <Image
                 src="/password-logo.svg"
@@ -71,15 +70,38 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="flex flex-col gap-y-1">
+            <label className="text-xs" htmlFor="Confirm password">
+              Confirm password
+            </label>
+            <div className="relative">
+              <input
+                className="border placeholder-dark-gray placeholder-opacity-50 pr-3 pl-7 rounded-lg h-[48px] w-[311px] sm:w-[396px] focus:outline-primary focus:shadow-primary/40 focus:shadow-lg border-borders"
+                type="text"
+                id="Confirm password"
+                placeholder="At least 8 characters"
+              />
+              <Image
+                src="/password-logo.svg"
+                width={13}
+                height={10}
+                className="absolute top-4 left-2"
+                alt="password logo"
+              />
+            </div>
+          </div>
+
+          <span className="text-xs text-grey sm:px-10 sm:place-self-start">Password must contain at least 8 characters</span>
+
           <button className="bg-primary font-semibold text-base capitalize text-white h-[46px] w-[311px] sm:w-[396px] rounded-lg">
             login
           </button>
         </form>
 
         <div className="flex flex-col sm:flex-row gap-x-1 sm:justify-center items-center mt-6">
-          <span>{"Don't"} have an account?</span>
-          <Link href="/create-account" className="text-primary">
-            Create account
+          <span>Already have an account?</span>
+          <Link href="/" className="text-primary">
+            Login
           </Link>
         </div>
       </div>

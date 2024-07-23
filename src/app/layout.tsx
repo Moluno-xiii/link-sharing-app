@@ -17,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={instrument_sans.className}>{children}</body>
+      <body
+        className={`${instrument_sans.className} bg-lightGrey leading-[150%] min-h-[100dvh]`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
