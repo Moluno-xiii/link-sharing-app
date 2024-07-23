@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import HeaderLinks from "@/components/header/HeaderLinks";
 import HeaderLogo from "@/components/header/HeaderLogo";
@@ -8,10 +8,10 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header className="p-6 flex flex-row justify-between items-center rounded-xl m-6 left-0 right-0 bg-white">
-        <HeaderLogo />
-        <HeaderLinks />
-        <Button variant="secondary" text="preview" />
+    <header className="left-0 right-0 m-6 flex flex-row items-center justify-between rounded-xl bg-white p-6">
+      <HeaderLogo />
+      <HeaderLinks />
+      <Button variant="secondary" text="preview" />
     </header>
   );
 };

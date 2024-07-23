@@ -2,10 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-
   return (
-    <main className="text-dark-gray max-sm:m-10 leading-[150%] sm:max-w-[476px] mx-auto sm:flex sm:flex-col sm:justify-center sm:items-center h-[100dvh]">
-      <header className="flex flex-row max-w-[311px] mx-auto gap-x-2 sm:justify-center">
+    <main className="mx-auto h-[100dvh] leading-[150%] text-dark-gray max-sm:m-10 sm:flex sm:max-w-[476px] sm:flex-col sm:items-center sm:justify-center">
+      <header className="mx-auto flex max-w-[311px] flex-row gap-x-2 sm:justify-center">
         <Image
           src="/logo.svg"
           width={33.33}
@@ -20,22 +19,22 @@ export default function Home() {
         />
       </header>
 
-      <div className="sm:bg-white sm:rounded-xl sm:py-8 mt-16 sm:w-[476px]">
-        <section className="flex flex-col gap-y-2  mb-8  max-w-[311px] sm:max-w-[396px] mx-auto">
-          <span className="font-bold text-2xl">Login</span>
-          <span className="text-grey text-base">
+      <div className="mt-16 sm:w-[476px] sm:rounded-xl sm:bg-white sm:py-8">
+        <section className="mx-auto mb-8 flex max-w-[311px] flex-col gap-y-2 sm:max-w-[396px]">
+          <span className="text-2xl font-bold">Login</span>
+          <span className="text-base text-grey">
             Add your details below to get back into the app
           </span>
         </section>
 
-        <form action="" className="flex flex-col gap-y-6 items-center">
+        <form action="" className="flex flex-col items-center gap-y-6">
           <div className="flex flex-col gap-y-1">
             <label className="text-xs" htmlFor="email">
               Email address
             </label>
             <div className="relative">
               <input
-                className="border rounded-lg h-[48px] pl-7 pr-3 w-[311px] sm:w-[396px] placeholder-dark-gray placeholder-opacity-50 focus:outline-primary focus:shadow-primary/40 focus:shadow-lg border-borders"
+                className="h-[48px] w-[311px] rounded-lg border border-borders pl-7 pr-3 placeholder-dark-gray placeholder-opacity-50 focus:shadow-lg focus:shadow-primary/40 focus:outline-primary sm:w-[396px]"
                 type="text"
                 id="email"
                 placeholder="e.g. alex@email.com"
@@ -44,7 +43,7 @@ export default function Home() {
                 src="/email-logo.svg"
                 width={13}
                 height={10}
-                className="absolute top-5 left-2"
+                className="absolute left-2 top-5"
                 alt="email logo"
               />
             </div>
@@ -56,7 +55,7 @@ export default function Home() {
             </label>
             <div className="relative">
               <input
-                className="border placeholder-dark-gray placeholder-opacity-50 pr-3 pl-7 rounded-lg h-[48px] w-[311px] sm:w-[396px] focus:outline-primary focus:shadow-primary/40 focus:shadow-lg border-borders"
+                className="h-[48px] w-[311px] rounded-lg border border-borders pl-7 pr-3 placeholder-dark-gray placeholder-opacity-50 focus:shadow-lg focus:shadow-primary/40 focus:outline-primary sm:w-[396px]"
                 type="text"
                 id="password"
                 placeholder="Enter your password"
@@ -65,18 +64,18 @@ export default function Home() {
                 src="/password-logo.svg"
                 width={13}
                 height={10}
-                className="absolute top-4 left-2"
+                className="absolute left-2 top-4"
                 alt="password logo"
               />
             </div>
           </div>
 
-          <button className="bg-primary font-semibold text-base capitalize text-white h-[46px] w-[311px] sm:w-[396px] rounded-lg">
+          <button className="h-[46px] w-[311px] rounded-lg bg-primary text-base font-semibold capitalize text-white sm:w-[396px]">
             login
           </button>
         </form>
 
-        <div className="flex flex-col sm:flex-row gap-x-1 sm:justify-center items-center mt-6">
+        <div className="mt-6 flex flex-col items-center gap-x-1 sm:flex-row sm:justify-center">
           <span>{"Don't"} have an account?</span>
           <Link href="/create-account" className="text-primary">
             Create account

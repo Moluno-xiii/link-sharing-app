@@ -17,8 +17,8 @@ const Button: React.FC<ButtonProps> = ({
     return (
       <button
         className={clsx(
-          "w-[227px] h-[46px] text-center font-semibold capitalize bg-white border border-primary text-primary focus:bg-light-purple transition-all duration-300 rounded-lg",
-          disabled === true && "text-opacity-25 border-opacity-25"
+          "h-[46px] w-[227px] rounded-lg border border-primary bg-white text-center font-semibold capitalize text-primary transition-all duration-300 focus:bg-light-purple",
+          disabled === true && "border-opacity-25 text-opacity-25",
         )}
       >
         {text}
@@ -27,8 +27,8 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={clsx(
-        "w-[227px] h-[46px] font-semibold transition-all duration-300 text-center text-white capitalize bg-primary focus:bg-purple-hover focus:text-opacity-25 rounded-lg",
-        disabled === true && "bg-opacity-25 text-opacity-25 cursor-not-allowed"
+        "h-[46px] w-[227px] rounded-lg bg-primary text-center font-semibold capitalize text-white transition-all duration-300 focus:bg-purple-hover focus:text-opacity-25",
+        disabled === true && "cursor-not-allowed bg-opacity-25 text-opacity-25",
       )}
     >
       {text}
