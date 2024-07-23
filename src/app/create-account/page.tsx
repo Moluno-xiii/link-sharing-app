@@ -21,9 +21,9 @@ export default function Home() {
 
       <div className="sm:bg-white sm:rounded-xl sm:py-8 mt-16 sm:w-[476px]">
         <section className="flex flex-col gap-y-2  mb-8  max-w-[311px] sm:max-w-[396px] mx-auto">
-          <span className="font-bold text-2xl">Login</span>
+          <span className="font-bold text-2xl">Create account</span>
           <span className="text-grey text-base">
-            Add your details below to get back into the app
+          {"Let's"} get you started sharing your links!
           </span>
         </section>
 

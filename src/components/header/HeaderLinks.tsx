@@ -24,7 +24,7 @@ const HeaderLinks: React.FC = () => {
         )}
       >
         <FiLink height={15.63} width={15.63} />
-        <span className="font-semibold hidden md:inline-block">Links</span>
+        <span className="font-semibold max-[769px]:hidden inline-block">Links</span>
       </Link>
 
       <Link

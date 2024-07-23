@@ -7,6 +7,7 @@ interface ButtonProps {
   variant: string;
   disabled?: boolean;
   icon?: IconType;
+  size? : "sm" | "lg"
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,6 +16,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   disabled,
   icon: Icon,
+  size
 }) => {
   if (variant.toLowerCase() === "secondary")
     return (
